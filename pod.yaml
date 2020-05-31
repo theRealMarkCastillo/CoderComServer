@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: codercomserver
+  name: codercomserver
+spec:
+  containers:
+  - image: therealmarkcastillo/codercomserver
+    imagePullPolicy: Always
+    name: codercomserver
+    ports:
+    - containerPort: 8080
+      protocol: TCP
